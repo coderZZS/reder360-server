@@ -1,0 +1,5 @@
+{"level":"ERROR","time":"2023-03-19T16:28:44.250+0800","caller":"mysql/mysql.go:27","msg":"connect mysql failed","error":"dial tcp: lookup tcp/%!d(string=3306): getaddrinfow: The specified class was not found."}
+{"level":"INFO","time":"2023-03-19T16:30:06.031+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-19T16:30:06.062+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-19T22:10:46.392+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-19T22:10:46.393+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
