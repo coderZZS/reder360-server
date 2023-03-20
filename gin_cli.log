@@ -9,3 +9,4 @@
 {"level":"FATAL","time":"2023-03-19T23:12:44.886+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
 {"level":"INFO","time":"2023-03-19T23:13:29.206+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
 {"level":"FATAL","time":"2023-03-19T23:13:29.214+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T10:30:07.798+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0.0005321}
