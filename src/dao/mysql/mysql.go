@@ -2,24 +2,24 @@ package mysql
 
 import (
 	"fmt"
+	"gin-cli/src/settings"
 
 	"go.uber.org/zap"
 
 	"github.com/jmoiron/sqlx"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/spf13/viper"
 )
 
 var db *sqlx.DB
 
-func Init() (err error) {
+func Init(config *settings.MysqlConfig) (err error) {
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True",
-		viper.GetString("mysql.user"),
-		viper.GetString("mysql.password"),
-		viper.GetString("mysql.host"),
-		viper.GetInt("mysql.port"),
-		viper.GetString("mysql.dbname"),
+		config.User,
+		config.Password,
+		config.Host,
+		config.Port,
+		config.DbName,
 	)
 
 	db, err = sqlx.Connect("mysql", dsn)
@@ -27,8 +27,8 @@ func Init() (err error) {
 		zap.L().Error("connect mysql failed", zap.Error(err))
 		return
 	}
-	db.SetMaxOpenConns(viper.GetInt("mysql.max_open_conns"))
-	db.SetMaxIdleConns(viper.GetInt("mysql.max_idle_conns"))
+	db.SetMaxOpenConns(config.MaxOpenConns)
+	db.SetMaxIdleConns(config.MaxIdleConns)
 	return nil
 }
 

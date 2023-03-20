@@ -1,6 +1,7 @@
 package logger
 
 import (
+	"gin-cli/src/settings"
 	"net"
 	"net/http"
 	"net/http/httputil"
@@ -8,8 +9,6 @@ import (
 	"runtime/debug"
 	"strings"
 	"time"
-
-	"github.com/spf13/viper"
 
 	"github.com/gin-gonic/gin"
 	"github.com/natefinch/lumberjack"
@@ -19,15 +18,15 @@ import (
 
 var lg *zap.Logger
 
-func Init() (err error) {
+func Init(config *settings.LogConfig) (err error) {
 	writeSyncer := getLogWriter(
-		viper.GetString("log.filename"),
-		viper.GetInt("log.maxSize"),
-		viper.GetInt("log.maxBackups"),
-		viper.GetInt("log.maxAge"))
+		config.Filename,
+		config.MaxSize,
+		config.MaxBackups,
+		config.MaxAge)
 	encoder := getEncoder()
 	var l = new(zapcore.Level)
-	err = l.UnmarshalText([]byte(viper.GetString("log.level")))
+	err = l.UnmarshalText([]byte(config.Level))
 	if err != nil {
 		return
 	}

@@ -29,7 +29,7 @@ func main() {
 	}
 	// 2.初始化日志
 
-	if err := logger.Init(); err != nil {
+	if err := logger.Init(settings.Conf.LogConfig); err != nil {
 		fmt.Printf("logger init failed, err: %v\n", err)
 		return
 	}
@@ -37,7 +37,7 @@ func main() {
 	defer zap.L().Sync()
 	// 3.初始化数据库
 	// 3.1 mysql
-	if err := mysql.Init(); err != nil {
+	if err := mysql.Init(settings.Conf.MysqlConfig); err != nil {
 		fmt.Printf("mysql init failed, err: %v\n", err)
 		return
 	}
@@ -45,7 +45,7 @@ func main() {
 	defer mysql.Close()
 
 	// 3.2 redis
-	if err := redis.Init(); err != nil {
+	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
 		fmt.Printf("redis init failed, err: %v\n", err)
 		return
 	}
