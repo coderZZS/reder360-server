@@ -19,6 +19,7 @@ func Init(config *settings.RedisConfig) (err error) {
 		DB:       config.Db,
 		PoolSize: config.PoolSize,
 	})
+	fmt.Println("redis connect success")
 	return nil
 }
 

@@ -37,3 +37,41 @@
 {"level":"INFO","time":"2023-03-20T11:25:50.437+0800","caller":"logger/logger.go:69","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0.0005232}
 {"level":"INFO","time":"2023-03-20T11:27:08.690+0800","caller":"logger/logger.go:69","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
 {"level":"INFO","time":"2023-03-20T11:27:22.746+0800","caller":"logger/logger.go:69","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0.0006935}
+{"level":"INFO","time":"2023-03-20T14:22:00.248+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:22:00.250+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:44:09.214+0800","caller":"gin-cli/main.go:76","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:44:09.228+0800","caller":"gin-cli/main.go:84","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:44:50.078+0800","caller":"gin-cli/main.go:76","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:44:50.087+0800","caller":"gin-cli/main.go:84","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:45:35.165+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:45:35.173+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:48:33.974+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:48:33.985+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:50:38.965+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:50:38.973+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:51:16.742+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:51:16.757+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:52:09.049+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:52:09.059+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:52:16.324+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:52:16.324+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:52:58.223+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:52:58.227+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:54:32.861+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:54:32.876+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T14:56:33.166+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T14:56:33.180+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:02:50.221+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:02:50.225+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:04:19.198+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:04:19.199+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:04:28.642+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:04:28.655+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:06:30.509+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:06:30.521+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:06:46.996+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:06:47.002+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:09:55.120+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:09:55.132+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:13:08.022+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:13:08.037+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}

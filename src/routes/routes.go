@@ -11,10 +11,13 @@ import (
 
 func Init() *gin.Engine {
 	r := gin.New()
+	fmt.Println(settings.Conf.Version, "------------------")
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 	r.GET("/", func(context *gin.Context) {
-		fmt.Println(settings.Conf.Version, "------------------")
-		context.String(http.StatusOK, settings.Conf.Version)
+		context.String(http.StatusOK, "ok")
+	})
+	r.GET("/test", func(context *gin.Context) {
+		context.String(http.StatusOK, "ok")
 	})
 	return r
 }

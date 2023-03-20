@@ -2,7 +2,7 @@
 name: "gin-cli"
 mode: "dev"
 port: 8088
-version: "1.0.1"
+version: "1.0.0"
 log:
   level: "debug"
   filename: "gin_cli.log"

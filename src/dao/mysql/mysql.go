@@ -29,6 +29,7 @@ func Init(config *settings.MysqlConfig) (err error) {
 	}
 	db.SetMaxOpenConns(config.MaxOpenConns)
 	db.SetMaxIdleConns(config.MaxIdleConns)
+	fmt.Println("mysql connect success")
 	return nil
 }
 
