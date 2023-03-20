@@ -113,3 +113,5 @@
 {"level":"INFO","time":"2023-03-20T15:33:04.699+0800","caller":"logger/logger.go:69","msg":"/test","status":200,"method":"GET","path":"/test","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1","errors":"","cost":0.0003224}
 {"level":"INFO","time":"2023-03-20T15:39:45.590+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
 {"level":"FATAL","time":"2023-03-20T15:39:45.600+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T15:41:12.729+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T15:41:12.738+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}

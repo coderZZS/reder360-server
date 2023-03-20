@@ -1,0 +1,9 @@
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.log
+*.exe
+
+.docker-volumes/
