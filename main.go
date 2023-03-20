@@ -6,6 +6,7 @@ import (
 	"gin-cli/src/dao/mysql"
 	"gin-cli/src/dao/redis"
 	"gin-cli/src/logger"
+	"gin-cli/src/pkg/snowflake"
 	"gin-cli/src/routes"
 	"gin-cli/src/settings"
 	"log"
@@ -16,8 +17,6 @@ import (
 	"time"
 
 	"go.uber.org/zap"
-
-	"github.com/spf13/viper"
 )
 
 func main() {
@@ -56,7 +55,7 @@ func main() {
 	r := routes.Init()
 	// 5.启动服务
 	srv := &http.Server{
-		Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),
+		Addr:    fmt.Sprintf(":%d", settings.Conf.Port),
 		Handler: r,
 	}
 	go func() {
@@ -64,6 +63,9 @@ func main() {
 			log.Fatalf("listen: %s\n", err)
 		}
 	}()
+
+	// 6.初始化雪花算法
+	snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID)
 
 	// 等待中断信号，关闭服务，为关闭服务设置一个5秒的超时
 	quit := make(chan os.Signal, 1)

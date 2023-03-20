@@ -3,6 +3,7 @@ package routes
 import (
 	"fmt"
 	"gin-cli/src/logger"
+	"gin-cli/src/pkg/snowflake"
 	"gin-cli/src/settings"
 	"net/http"
 
@@ -17,7 +18,7 @@ func Init() *gin.Engine {
 		context.String(http.StatusOK, "ok")
 	})
 	r.GET("/test", func(context *gin.Context) {
-		context.String(http.StatusOK, "ok")
+		context.String(http.StatusOK, "request id:%d", snowflake.GenID())
 	})
 	return r
 }
