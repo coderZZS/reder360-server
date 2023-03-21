@@ -115,3 +115,58 @@
 {"level":"FATAL","time":"2023-03-20T15:39:45.600+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
 {"level":"INFO","time":"2023-03-20T15:41:12.729+0800","caller":"gin-cli/main.go:75","msg":"Shutdown Server..."}
 {"level":"FATAL","time":"2023-03-20T15:41:12.738+0800","caller":"gin-cli/main.go:83","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:15:26.783+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0000708}
+{"level":"INFO","time":"2023-03-20T17:22:11.220+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:22:15.671+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:22:18.290+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:22:20.996+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:22:25.743+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:22:25.743+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:22:33.882+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0006711}
+{"level":"INFO","time":"2023-03-20T17:23:59.850+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:23:59.858+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:24:08.199+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:24:45.313+0800","caller":"logger/logger.go:69","msg":"/test","status":404,"method":"GET","path":"/test","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0.0004581}
+{"level":"INFO","time":"2023-03-20T17:24:49.886+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0005125}
+{"level":"INFO","time":"2023-03-20T17:24:53.842+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:24:53.854+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:25:01.691+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:25:42.828+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:26:09.134+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:26:15.691+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:26:28.571+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:29:59.940+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:29:59.946+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:30:23.110+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:30:58.698+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:31:47.873+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:31:47.873+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:32:08.442+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0005272}
+{"level":"INFO","time":"2023-03-20T17:32:18.667+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:33:11.895+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0002913}
+{"level":"INFO","time":"2023-03-20T17:33:44.516+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:33:44.530+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:34:16.948+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0002759}
+{"level":"INFO","time":"2023-03-20T17:34:26.061+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0005246}
+{"level":"INFO","time":"2023-03-20T17:37:10.489+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:37:37.527+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:37:39.465+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:37:40.973+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-20T17:37:56.562+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:37:56.565+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:40:31.514+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0005186}
+{"level":"INFO","time":"2023-03-20T17:40:50.790+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0004472}
+{"level":"INFO","time":"2023-03-20T17:40:54.285+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:40:54.288+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T17:42:59.323+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T17:42:59.325+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T18:09:00.448+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T18:09:00.460+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T18:12:23.379+0800","caller":"gin-cli/main.go:77","msg":"Shutdown Server..."}
+{"level":"FATAL","time":"2023-03-20T18:12:23.386+0800","caller":"gin-cli/main.go:85","msg":"Server exiting..."}
+{"level":"INFO","time":"2023-03-20T18:12:32.719+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-21T17:29:35.888+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0006071}
+{"level":"INFO","time":"2023-03-21T17:31:51.812+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.5158826}
+{"level":"INFO","time":"2023-03-21T17:31:55.245+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0019824}
+{"level":"INFO","time":"2023-03-21T17:32:22.921+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0012515}
+{"level":"INFO","time":"2023-03-21T17:33:48.130+0800","caller":"logger/logger.go:69","msg":"/signUp","status":200,"method":"POST","path":"/signUp","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime-ApipostRuntime/1.1.0","errors":"","cost":0.0016004}

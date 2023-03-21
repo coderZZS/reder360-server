@@ -16,7 +16,7 @@ func GetDirPath() string {
 	if strings.Contains(dir, tmpDir) {
 		dir = getCurrentAbPathByCaller()
 	}
-	return filepath.Join(dir, "../../")
+	return filepath.Join(dir, "../")
 }
 
 // 获取当前执行文件绝对路径

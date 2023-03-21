@@ -2,7 +2,6 @@ package settings
 
 import (
 	"fmt"
-	"gin-cli/src/utils"
 
 	"github.com/fsnotify/fsnotify"
 
@@ -56,7 +55,7 @@ func WriteConf() {
 }
 
 func Init() (err error) {
-	viper.SetConfigFile(utils.GetDirPath() + "/config.yaml")
+	viper.SetConfigFile("config.yaml")
 	//viper.SetConfigName("config") // 指定配置文件名称
 	//viper.SetConfigType("yaml")   // 指定文件类型(获取远程配置时使用)
 	//viper.AddConfigPath(".") // 指定查找配置文件的相对路径
