@@ -1,4 +1,9 @@
 {
-    "goOutliner.extendExplorerTab": true,
-    "goOutliner.enableDebugChannel": false
+  "goOutliner.extendExplorerTab": true,
+  "goOutliner.enableDebugChannel": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true
 }

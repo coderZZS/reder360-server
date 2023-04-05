@@ -1,0 +1,162 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {
+            "name": "这里写联系人信息",
+            "url": "http://www.swagger.io/support",
+            "email": "support@swagger.io"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "host": "127.0.0.1:8088",
+    "paths": {
+        "/api/post/list/type": {
+            "get": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "可按社区按时间或分数排序查询帖子列表接口",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "帖子相关接口"
+                ],
+                "summary": "根据时间或者分数查询列表",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Bearer 用户令牌",
+                        "name": "Authorization",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "name": "order",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "page_size",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller._ResponsePostList"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.ResCode": {
+            "type": "integer",
+            "enum": [
+                1000,
+                1001,
+                1002,
+                1003,
+                1004,
+                1005,
+                1006,
+                1007
+            ],
+            "x-enum-varnames": [
+                "CodeSuccess",
+                "CodeInvalidParams",
+                "CodeUserExist",
+                "CodeUserNotExist",
+                "CodeInvalidPassword",
+                "CodeServerBusy",
+                "CodeNeedLogin",
+                "CodeInvalidAuth"
+            ]
+        },
+        "controller._ResponsePostList": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "$ref": "#/definitions/controller.ResCode"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.PostDetail"
+                    }
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.CommunityDetail": {
+            "type": "object",
+            "properties": {
+                "create_time": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "introduction": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.PostDetail": {
+            "type": "object",
+            "properties": {
+                "author_id": {
+                    "type": "string",
+                    "example": "0"
+                },
+                "author_name": {
+                    "type": "string"
+                },
+                "community": {
+                    "$ref": "#/definitions/models.CommunityDetail"
+                },
+                "community_id": {
+                    "type": "integer"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "create_time": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "0"
+                },
+                "status": {
+                    "type": "integer"
+                },
+                "title": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

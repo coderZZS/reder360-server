@@ -5,6 +5,9 @@ port: 8088
 version: "1.0.0"
 start_time: "2023-03-20"
 machine_id: 1
+
+common:
+  jwt_overtime: 60
 log:
   level: "debug"
   filename: "gin_cli.log"

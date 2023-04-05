@@ -19,16 +19,29 @@ import (
 	"go.uber.org/zap"
 )
 
+// title gin-cli接口文档
+// @version 1.0.0
+// description gin-cli的接口文档
+// termsOfService http://swagger.io/terms/
+
+// @contact.name 这里写联系人信息
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @host 127.0.0.1:8088
+// @BasePath
 func main() {
 	// 1.加载配置
-
 	if err := settings.Init(); err != nil {
 		fmt.Printf("settings init failed, err: %v\n", err)
 		return
 	}
 	// 2.初始化日志
 
-	if err := logger.Init(settings.Conf.LogConfig); err != nil {
+	if err := logger.Init(settings.Conf.LogConfig, settings.Conf.Mode); err != nil {
 		fmt.Printf("logger init failed, err: %v\n", err)
 		return
 	}

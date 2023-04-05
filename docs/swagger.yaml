@@ -1,0 +1,109 @@
+definitions:
+  controller._ResponsePostList:
+    properties:
+      code:
+        $ref: '#/definitions/controller.ResCode'
+      data:
+        items:
+          $ref: '#/definitions/models.PostDetail'
+        type: array
+      message:
+        type: string
+    type: object
+  controller.ResCode:
+    enum:
+    - 1000
+    - 1001
+    - 1002
+    - 1003
+    - 1004
+    - 1005
+    - 1006
+    - 1007
+    type: integer
+    x-enum-varnames:
+    - CodeSuccess
+    - CodeInvalidParams
+    - CodeUserExist
+    - CodeUserNotExist
+    - CodeInvalidPassword
+    - CodeServerBusy
+    - CodeNeedLogin
+    - CodeInvalidAuth
+  models.CommunityDetail:
+    properties:
+      create_time:
+        type: string
+      id:
+        type: integer
+      introduction:
+        type: string
+      name:
+        type: string
+    type: object
+  models.PostDetail:
+    properties:
+      author_id:
+        example: "0"
+        type: string
+      author_name:
+        type: string
+      community:
+        $ref: '#/definitions/models.CommunityDetail'
+      community_id:
+        type: integer
+      content:
+        type: string
+      create_time:
+        type: string
+      id:
+        example: "0"
+        type: string
+      status:
+        type: integer
+      title:
+        type: string
+    type: object
+host: 127.0.0.1:8088
+info:
+  contact:
+    email: support@swagger.io
+    name: 这里写联系人信息
+    url: http://www.swagger.io/support
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+paths:
+  /api/post/list/type:
+    get:
+      consumes:
+      - application/json
+      description: 可按社区按时间或分数排序查询帖子列表接口
+      parameters:
+      - description: Bearer 用户令牌
+        in: header
+        name: Authorization
+        type: string
+      - in: query
+        name: order
+        type: string
+      - in: query
+        name: page
+        type: integer
+      - in: query
+        name: page_size
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller._ResponsePostList'
+      security:
+      - ApiKeyAuth: []
+      summary: 根据时间或者分数查询列表
+      tags:
+      - 帖子相关接口
+swagger: "2.0"
