@@ -2,7 +2,7 @@ package mysql
 
 import (
 	"fmt"
-	"gin-cli/src/settings"
+	"reader360Server/src/settings"
 
 	"go.uber.org/zap"
 

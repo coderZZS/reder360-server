@@ -1,15 +1,15 @@
 package routes
 
 import (
-	"gin-cli/src/controller"
-	"gin-cli/src/logger"
-	"gin-cli/src/middleware"
 	"net/http"
+	"reader360Server/src/controller"
+	"reader360Server/src/logger"
+	"reader360Server/src/middleware"
 
 	swaggerFiles "github.com/swaggo/files"
 	gs "github.com/swaggo/gin-swagger"
 
-	_ "gin-cli/docs"
+	_ "reader360Server/docs"
 
 	"github.com/gin-gonic/gin"
 )
@@ -36,26 +36,5 @@ func Init() *gin.Engine {
 		user.POST("/login", controller.UserLogin)
 	}
 	r.Use(middleware.JWTAuthMiddleware()) // 设置鉴权中间件
-	// community
-	community := r.Group("/api/community")
-	{
-		community.GET("/", controller.CommunityTagList)
-		community.GET("/:id", controller.CommunityDetail)
-	}
-
-	// post
-	post := r.Group("/api/post")
-	{
-		post.POST("/add", controller.PostAdd)
-		post.GET("/:id", controller.PostDetail)
-		post.GET("/list", controller.PostList)
-		post.GET("/list/type", controller.PostListByType)
-	}
-
-	// vote
-	vote := r.Group("/api/vote")
-	{
-		vote.POST("/", controller.VotePost)
-	}
 	return r
 }

@@ -1,5 +1,5 @@
 
-name: "gin-cli"
+name: "reader360Server"
 mode: "dev"
 port: 8088
 version: "1.0.0"
@@ -19,7 +19,7 @@ mysql:
   port: 3306
   user: "root"
   password: "Admin123456"
-  dbname: "rush_cli_dev"
+  dbname: "reader360"
   max_open_conns: 200
   max_idle_conns: 50
 redis:
